@@ -7,7 +7,7 @@ class Prescriptions extends Component {
     }
 	render() {
 		return (
-			<p>Prescriptions page</p>
+			<h2 className='page-title'>Prescriptions</h2>
 		)
 	}
 }

@@ -7,13 +7,15 @@ class Home extends Component {
 		super(props)
     }
 	render() {
+		let messageCounter = this.props.messages.length;
+		let messages = 'Messages' + " (" + messageCounter + ")";
 		return (
 				<div className="home">
 					<div className="inner-home-container">
 						<h2>Welcome back, {this.props.username}</h2>
 						<div className="home-link-container">
 						<Link className='homelink' to ='/appointments'>Appointments</Link>
-						<Link className='homelink' to ='/messages'>Messages</Link>
+						<Link className='homelink' to ='/messages'>{messages}</Link>
 						<Link className='homelink' to ='/prescriptions'>Prescriptions</Link>
 						<Link className='homelink' to ='/account'>Account</Link>
 						<Link className='homelink' to ='/billing'>Billing</Link>

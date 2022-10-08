@@ -7,7 +7,12 @@ class Help extends Component {
     }
 	render() {
 		return (
-			<p>Help page</p>
+            <>
+            <div className='help-page'>
+			<h2 className='page-title'>Help</h2>
+            <p>Links to various help articles will go here, maybe a contact form too.</p>
+            </div>
+            </>
 		)
 	}
 }

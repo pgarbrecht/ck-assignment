@@ -22,20 +22,24 @@ class App extends Component {
 		this.state = {
       username: 'Mark',
       messages: [{
-        subject: '',
-        from: '',
-        date: '',
-        messageDetails: '',
+        subject: 'Hello',
+        from: 'Phil',
+        date: 'October 8, 2022',
+        messageDetails: 'Thank you for viewing my assignment. Hope you like it!',
         isRead: false,
-      }],
-      actionItems: [{
-        actionName: '',
-        actionDetails: '',
-        isDone: false
-      }]
+      },
+      {
+        subject: 'Next steps?',
+        from: 'Phil',
+        date: 'October 8, 2022',
+        messageDetails: 'Want to move forward? Looking forward to the next stage.',
+        isRead: false,
+      }
+      ]
     }
   }
   render() {
+    console.log('app message', this.state.messages)
   return (
     
     <Router>
@@ -46,6 +50,7 @@ class App extends Component {
         path="/"
         element={<Home
           username={this.state.username}
+          messages={this.state.messages}
           />}
         />
         
@@ -56,7 +61,9 @@ class App extends Component {
 
         <Route 
         path="/messages"
-        element={<Messages/>}
+        element={<Messages
+          messages={this.state.messages}
+          />}
         />
 
         <Route 

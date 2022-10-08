@@ -7,7 +7,7 @@ class Billing extends Component {
     }
 	render() {
 		return (
-			<p>Billing page</p>
+			<h2 className='page-title'>Billing</h2>
 		)
 	}
 }

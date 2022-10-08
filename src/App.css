@@ -69,6 +69,35 @@ html {
   color: #92aaff;
 }
 
+.page-title {
+  color: white;
+  text-align: center;
+}
+
+.help-page {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.messages-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  background-color: white;
+  width: 300px;
+  color: #5e82ff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 800px) {
   .home-link-container {
     grid-template-columns: 200px 200px;

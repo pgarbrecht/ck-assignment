@@ -8,7 +8,7 @@ class Appointments extends Component {
 	render() {
         console.log('appt page')
 		return (
-			<p>Appointments page</p>
+			<h2 className='page-title'>Appointments</h2>
 		)
 	}
 }

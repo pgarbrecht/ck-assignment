@@ -7,7 +7,7 @@ class Account extends Component {
     }
 	render() {
 		return (
-			<p>Account page</p>
+			<h2 className='page-title'>Account</h2>
 		)
 	}
 }
