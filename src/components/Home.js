@@ -8,7 +8,7 @@ class Home extends Component {
     }
 	render() {
 		let messageCounter = this.props.messages.length;
-		let messages = 'Messages' + " (" + messageCounter + ")";
+		let messages = 'Messages' + " (" + this.props.totalUnreadMessages + ")";
 		return (
 				<div className="home">
 					<div className="inner-home-container">

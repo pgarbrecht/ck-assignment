@@ -6,11 +6,9 @@ class Messages extends Component {
 	constructor(props) {
 		super(props)
     }
-    // componentDidMount() {
-    //     Messages.setState({
-
-    //     })
-    // }
+    componentDidMount() {
+        this.props.updateUnreadMessages()
+    }
 	render() {
 		return (
             <>

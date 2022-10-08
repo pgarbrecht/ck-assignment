@@ -35,9 +35,17 @@ class App extends Component {
         messageDetails: 'Want to move forward? Looking forward to the next stage.',
         isRead: false,
       }
-      ]
+      ],
+      totalUnreadMessages: 2
     }
   }
+
+  updateUnreadMessages = () => {
+    this.setState({
+      totalUnreadMessages: 0
+    })
+  }
+
   render() {
     console.log('app message', this.state.messages)
   return (
@@ -51,6 +59,7 @@ class App extends Component {
         element={<Home
           username={this.state.username}
           messages={this.state.messages}
+          totalUnreadMessages={this.state.totalUnreadMessages}
           />}
         />
         
@@ -63,6 +72,7 @@ class App extends Component {
         path="/messages"
         element={<Messages
           messages={this.state.messages}
+          updateUnreadMessages={this.updateUnreadMessages}
           />}
         />
 
