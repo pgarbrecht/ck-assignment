@@ -25,9 +25,6 @@ class Messages extends Component {
                     )
                 })}
             </div>
-            {/* // {this.props.messages.map((message) => {
-                
-            // } */}
             </>
 		)
 	}
