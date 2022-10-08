@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home'
+import Appointments from './components/Appointments'
 
 import {
   BrowserRouter as Router,
@@ -18,6 +19,11 @@ function App() {
         element={<Home/>}
         />
         
+        <Route 
+        path="/appointments"
+        element={<Appointments/>}
+        />
+
       </Routes>
     </Router>
   );
