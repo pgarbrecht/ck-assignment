@@ -1,4 +1,5 @@
 import './App.css';
+import React, {Component} from 'react'
 import Home from './components/Home'
 import Appointments from './components/Appointments'
 import Messages from './components/Messages'
@@ -6,6 +7,7 @@ import Prescriptions from './components/Prescriptions'
 import Account from './components/Account'
 import Billing from './components/Billing'
 import Help from './components/Help'
+import Navbar from './components/Navbar'
 
 import {
   BrowserRouter as Router,
@@ -13,14 +15,38 @@ import {
   Route,
 } from "react-router-dom";
 
-function App() {
+class App extends Component {
+	constructor(props) {
+		super(props);
+        
+		this.state = {
+      username: 'Mark',
+      messages: [{
+        subject: '',
+        from: '',
+        date: '',
+        messageDetails: '',
+        isRead: false,
+      }],
+      actionItems: [{
+        actionName: '',
+        actionDetails: '',
+        isDone: false
+      }]
+    }
+  }
+  render() {
   return (
+    
     <Router>
+      <Navbar />
       <Routes>
 
         <Route 
         path="/"
-        element={<Home/>}
+        element={<Home
+          username={this.state.username}
+          />}
         />
         
         <Route 
@@ -55,7 +81,9 @@ function App() {
 
       </Routes>
     </Router>
+    
   );
+  }
 }
 
 
