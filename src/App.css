@@ -72,9 +72,10 @@ html {
 .page-title {
   color: white;
   text-align: center;
+  margin-top: 100px;
 }
 
-.help-page {
+.help-page, .account-page {
   color: white;
   display: flex;
   flex-direction: column;
@@ -96,6 +97,46 @@ html {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
+}
+
+.prescriptions-heading {
+  color: white;
+  text-align: center;
+}
+
+.recommended-prescription-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.appt-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+  color: white;
+}
+
+.form-button {
+  background-color: white;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.form-button:hover {
+  background-color: #92aaff;
+}
+
+label, input {
+  margin: 5px;
 }
 
 @media only screen and (max-width: 800px) {
