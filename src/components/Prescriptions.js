@@ -1,6 +1,7 @@
 import '../App.css';
 import React, {Component} from 'react'
 import Prescription from './Prescription.js'
+import { Link } from "react-router-dom"
 
 class Prescriptions extends Component {
 	constructor(props) {
@@ -25,6 +26,8 @@ class Prescriptions extends Component {
 	render() {
 		return (
             <>
+            <div className='back-home-spacer'></div>
+            <Link className='back-home' to='/'>Back to Home</Link>
             <div className='prescription-page'>
             <div>
 			<h2 className='page-title'>Current prescriptions</h2>

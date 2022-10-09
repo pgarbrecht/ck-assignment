@@ -1,5 +1,6 @@
 import '../App.css';
 import React, {Component} from 'react'
+import { Link } from "react-router-dom"
 
 class Appointments extends Component {
 	constructor(props) {
@@ -20,6 +21,9 @@ class Appointments extends Component {
     }
 	render() {
 		return (
+            <>
+            <div className='back-home-spacer'></div>
+            <Link className='back-home' to='/'>Back to Home</Link>
             <div className='appt-page'>
             <div>
 			<h2 className='page-title'>Current appointments</h2>
@@ -46,6 +50,7 @@ class Appointments extends Component {
                 <p>(for display)</p>
             </form>
             </div>
+            </>
 		)
 	}
 }

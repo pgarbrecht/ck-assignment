@@ -1,5 +1,6 @@
 import '../App.css';
 import React, {Component} from 'react'
+import { Link } from "react-router-dom"
 
 class Help extends Component {
 	constructor(props) {
@@ -8,9 +9,11 @@ class Help extends Component {
 	render() {
 		return (
             <>
+            <div className='back-home-spacer'></div>
+            <Link className='back-home' to='/'>Back to Home</Link>
             <div className='help-page'>
 			<h2 className='page-title'>Help</h2>
-            <form className='form help' id='help-form'>
+            <form className='form' id='help-form'>
                 <h3 className='page-title'>Fill out the form below to contact support</h3>
                 <label><b>Name:</b></label>
                 <input type='text' placeholder='Name'></input>

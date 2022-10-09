@@ -13,7 +13,7 @@ class Navbar extends Component {
             <Link to='/'>
 			<img className="nav-logo" src="https://assets.website-files.com/62d56e6f57f0a6bc6871b4c0/62d56e6f57f0a68c4f71b5e1_Frame%204-3.png"></img>
             </Link>
-            <p>Made by Phil Garbrecht</p>
+            <p className='made-by'>Made by Phil Garbrecht</p>
             <a className="signout-link" href='#'>Signout (for display)</a>
             </div>
             </>

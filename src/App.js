@@ -47,7 +47,7 @@ class App extends Component {
   }
 
   render() {
-    console.log('app message', this.state.messages)
+    
   return (
     
     <Router>
