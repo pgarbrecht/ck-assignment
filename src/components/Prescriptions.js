@@ -51,7 +51,7 @@ class Prescriptions extends Component {
 				<h3>Prescription Name: Package 3</h3>
 				<h4>Price: $350</h4>
                 <p><b>Description:</b> The next best package to take after 1 and 2.</p>
-                <button className="form-button">Buy now</button>
+                <button className="white-card-button">Buy now</button>
 			</div>
             </div>
             </div>

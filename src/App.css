@@ -148,12 +148,34 @@ html {
 
 .form-button {
   background-color: white;
+  border: solid 3px white;
   width: 100px;
   border-radius: 10px;
+  height: 30px;
+  font-size: 16px;
+  color: #5e82ff;
 }
 
 .form-button:hover {
   background-color: #92aaff;
+  border: solid 3px #92aaff;
+  color: white;
+}
+
+.white-card-button {
+  background-color: #92aaff;
+  border: solid 3px #92aaff;
+  width: 150px;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 16px;
+  color: white;
+}
+
+.white-card-button:hover {
+  background-color: #cfd9fd;
+  border: solid 3px #92aaff;
+  color: #5e82ff;
 }
 
 label, input {

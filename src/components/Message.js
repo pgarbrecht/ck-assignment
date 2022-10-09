@@ -14,7 +14,7 @@ class Message extends Component {
 				<p>{this.props.messageDetails}</p>
 				<label><b>Reply:</b></label>
 				<textarea className="message-reply"></textarea>
-				<button className="form-button">Send Reply</button>
+				<button className="white-card-button">Send Reply</button>
 				<p>(for display)</p>
 			</div>
 		)
