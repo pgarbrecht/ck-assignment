@@ -10,8 +10,12 @@ class Message extends Component {
 			<div className='message'>
 				<h3>Subject: {this.props.subject}</h3>
 				<h4>From: {this.props.from}</h4>
-				<p>{this.props.date}</p>
+				<p><b>{this.props.date}</b></p>
 				<p>{this.props.messageDetails}</p>
+				<label><b>Reply:</b></label>
+				<textarea className="message-reply"></textarea>
+				<button className="form-button">Send Reply</button>
+				<p>(for display)</p>
 			</div>
 		)
 	}

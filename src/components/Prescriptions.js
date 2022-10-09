@@ -25,8 +25,9 @@ class Prescriptions extends Component {
 	render() {
 		return (
             <>
-			<h2 className='page-title'>Prescriptions</h2>
-            <h3 className='prescriptions-heading'>Current</h3>
+            <div className='prescription-page'>
+            <div>
+			<h2 className='page-title'>Current prescriptions</h2>
             <div className='messages-page'>
                 {this.state.prescriptions.map( (prescription) => {
                     return (
@@ -39,13 +40,18 @@ class Prescriptions extends Component {
                     )
                 })}
             </div>
+            </div>
+            <div>
             <h3 className='prescriptions-heading'>Recommended</h3>
             <div className='recommended-prescription-container'>
             <div className='message'>
 				<h3>Prescription Name: Package 3</h3>
 				<h4>Price: $350</h4>
                 <p><b>Description:</b> The next best package to take after 1 and 2.</p>
+                <button className="form-button">Buy now</button>
 			</div>
+            </div>
+            </div>
             </div>
             </>
 		)

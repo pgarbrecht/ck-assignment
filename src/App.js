@@ -24,7 +24,7 @@ class App extends Component {
       messages: [{
         subject: 'Hello',
         from: 'Phil',
-        date: 'October 8, 2022',
+        date: 'October 7, 2022',
         messageDetails: 'Thank you for viewing my assignment. Hope you like it!',
         isRead: false,
       },

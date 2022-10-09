@@ -99,6 +99,11 @@ html {
   border-radius: 10px;
 }
 
+.message-reply {
+  width: 270px;
+  height: 80px;
+}
+
 .prescriptions-heading {
   color: white;
   text-align: center;
@@ -107,10 +112,17 @@ html {
 .recommended-prescription-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 200px;
+  margin-left: 50px;
 }
 
 .appt-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.prescription-page {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -125,6 +137,10 @@ html {
   color: white;
 }
 
+#help-form {
+  margin-top: -50px;
+}
+
 .form-button {
   background-color: white;
   width: 100px;
@@ -137,6 +153,11 @@ html {
 
 label, input {
   margin: 5px;
+}
+
+textarea {
+  width: 350px;
+  margin-left: 5px;
 }
 
 @media only screen and (max-width: 800px) {
